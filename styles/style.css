@@ -58,7 +58,7 @@ ol {
   display: flex;
   position: relative;
   flex-direction: column;
-  max-height: 298px;
+  height: 298px;
   overflow: auto;
 }
 
@@ -66,7 +66,7 @@ ol {
   display: flex;
   gap: 6px;
   width: 100%;
-  max-height: 534px;
+  height: 534px;
 }
 
 .result__video-container {
@@ -250,7 +250,12 @@ ol {
   border-bottom: 1px solid currentColor;
 }
 
-.search-form__textfield:focus {
+.search-form__textfield:focus{
+  border: none;
+  outline: none;
+}
+
+.search-form__textfield:active{
   border: none;
   outline: none;
 }
